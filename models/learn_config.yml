@@ -1,0 +1,16 @@
+models:
+  - name: learning_model1
+    description: testing table for just learning
+    columns:
+      - name : name
+        tests:
+          - not_null
+          - unique
+      - name: age
+        tests:
+          - accepted_range:
+              start: 20
+              end: 100
+
+      - name: status
+        description: "{{ doc('status') }}"

@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: MY_TABLE_NAME
+    database: LEARNING 
+    schema: TEST  
+    tables:
+      - name: MY_TABLE
